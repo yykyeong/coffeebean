@@ -1,0 +1,122 @@
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+.sub-nav-area {
+  background-color: $brown-title;
+
+  .sub-nav-list {
+    display: flex;
+    justify-content: flex-end;
+    height: $header-sub-height;
+
+    li {
+      display: flex;
+      position: relative;
+
+      &::after {
+        content: '';
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 1px;
+        height: 12px;
+        background-color: rgba($white,.3);
+      }
+
+      &:nth-child(4),
+      &:last-child {
+        &::after {
+          display: none;
+        }
+      }
+    }
+
+    a {
+      display: flex;
+      align-items: center;
+      padding: 0 18px;
+      font-size: 12px;
+      color: $white;
+      opacity: .8;
+    }
+  }
+}
+
+.main-nav-area {
+  background-color: $white;
+
+  .common-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .main-nav-list {
+    display: flex;
+
+    .main-nav-item {
+      &:hover {
+        .nav-title {
+          color: $orange-txt;
+          background-color: $bg01;
+        }
+        .nav-content {
+          display: block;
+        }
+      }
+    }
+
+
+    .nav-title {
+      display: flex;
+      line-height: $header-main-height;
+      padding: 0px 20px;
+    }
+
+    .nav-content {
+      position: fixed;
+      left: 0;
+      width: 100%;
+      background-color: $bg01;
+      padding: 15px 0;
+      display: none;
+
+      .common-inner {
+        align-items: flex-start;
+        justify-content:flex-start;
+        flex-wrap: wrap;
+      }
+
+      .nav-content-detail {
+        width: 220px;
+
+        .detail-title {
+          padding: 3px  0 12px;
+          font-size: 14px;
+          color:$brown-title;
+          cursor: pointer;
+        }
+        .detail-list li {
+          padding: 5px 0;
+          font-size: 12px;
+          color: $brown-txt;
+          cursor: pointer;
+
+          &:hover {
+            color: $orange-txt;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+
+

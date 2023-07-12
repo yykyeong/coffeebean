@@ -1,11 +1,365 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>COFFEE BEAN</title>
+
+  <!-- css -->
+  <link rel="stylesheet" href="./css/style.css">
+
+  <!--Swiper-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+  <!--Google Material Icons-->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+
+  <!-- js -->
+  <script defer src="./js/main.js"></script>
+
 </head>
+
 <body>
-  
+
+  <!-- header -->
+  <header>
+    <div class="sub-nav-area">
+      <div class="common-inner">
+        <ul class="sub-nav-list">
+          <li><a href="#none">Sign In</a></li>
+          <li><a href="#none">My Coffeebean</a></li>
+          <li><a href="#none">Customer Service & Ideas</a></li>
+          <li><a href="#none">Find a Store</a></li>
+          <li class="search-btn"><a href="#none"><img src="./images/ico-search.svg" alt="search"></a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="main-nav-area">
+      <div class="common-inner">
+        <a href="#none" class="logo"><img src="./images/logo.png" alt="coffeebean"></a>
+
+        <ul class="main-nav-list">
+          <li class="main-nav-item">
+            <a href="#none" class="nav-title">BUY ONLINE</a>
+            <div class="nav-content">
+              <ul class="common-inner">
+                <li class="nav-content-detail">
+                  <h4 class="detail-title">view all</h4>
+                </li>
+                <li class="nav-content-detail">
+                  <h4 class="detail-title">스틱 커피</h4>
+                  <ul class="detail-list">
+                    <li>스틱 커피</li>
+                  </ul>
+                </li>
+                <li class="nav-content-detail">
+                  <h4 class="detail-title">분쇄형 커피</h4>
+                  <ul class="detail-list">
+                    <li>드립백</li>
+                  </ul>
+                </li>
+                <li class="nav-content-detail">
+                  <h4 class="detail-title">캡슐 커피</h4>
+                  <ul class="detail-list">
+                    <li>CBLT 호환용</li>
+                    <li>네스프레소 호환용</li>
+                  </ul>
+                </li>
+                <li class="nav-content-detail">
+                  <h4 class="detail-title">원두</h4>
+                  <ul class="detail-list">
+                    <li>원두 가이드</li>
+                    <li>라이트 로스트</li>
+                    <li>미디엄 로스트</li>
+                    <li>다크 로스트</li>
+                  </ul>
+                </li>
+                <li class="nav-content-detail">
+                  <h4 class="detail-title">티</h4>
+                  <ul class="detail-list">
+                    <li>티 가이드</li>
+                    <li>클래식티</li>
+                    <li>허브티</li>
+                    <li>프룻티</li>
+                  </ul>
+                </li>
+                <li class="nav-content-detail">
+                  <h4 class="detail-title">상품</h4>
+                  <ul class="detail-list">
+                    <li>아이스 텀블러</li>
+                    <li>CBLT 머신</li>
+                    <li>보온 텀블러</li>
+                    <li>머그</li>
+                    <li>파우더</li>
+                    <li>펫 MD</li>
+                    <li>푸드</li>
+                    <li>기타상품</li>
+                  </ul>
+                </li>
+                <li class="nav-content-detail">
+                  <h4 class="detail-title">CBLT 시스템</h4>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="main-nav-item">
+            <a href="#none" class="nav-title">MEMBER'S CLUB</a>
+            <div class="nav-content">
+              <ul class="common-inner">
+                <li class="nav-content-detail">
+                  <h4 class="detail-title">커피빈 멤버스 클럽</h4>
+                  <ul class="detail-list">
+                    <li>멤버스 클럽</li>
+                    <li>커피빈 카드</li>
+                    <li>커피빈 e-Gift</li>
+                  </ul>
+                </li>
+                <li class="nav-content-detail">
+                  <h4 class="detail-title">나의 커피빈</h4>
+                  <ul class="detail-list">
+                    <li>나의 콩/e쿠폰보기</li>
+                    <li>나의 코피빈 카드</li>
+                    <li>커피빈 카드 등록</li>
+                    <li>분실신고/환불신청</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="main-nav-item">
+            <a href="#none" class="nav-title">MENU</a>
+            <div class="nav-content">
+              <ul class="common-inner">
+                <li class="nav-content-detail">
+                  <h4 class="detail-title">음료</h4>
+                  <ul class="detail-list">
+                    <li>신음료</li>
+                    <li>에스프레소 음료</li>
+                    <li>브루드커피</li>
+                    <li>티</li>
+                    <li>티 라떼</li>
+                    <li>아이스 블렌디드 &#40;Coffee&#41;</li>
+                    <li>아이스 블렌디드 &#40;Non-Coffee&#41;</li>
+                    <li>커피빈 주스 &#40;병음료&#41;</li>
+                    <li>기타 제조 음료</li>
+                    <li>엑스트라</li>
+                  </ul>
+                </li>
+                <li class="nav-content-detail">
+                  <h4 class="detail-title">푸드</h4>
+                  <ul class="detail-list">
+                    <li>베이커리</li>
+                    <li>케익</li>
+                    <li>홀케익</li>
+                    <li>샌드위치 & 샐러드</li>
+                    <li>기타</li>
+                  </ul>
+                </li>
+                <li class="nav-content-detail">
+                  <h4 class="detail-title">상품</h4>
+                  <ul class="detail-list">
+                    <li>아이스 텀블러</li>
+                    <li>보온 텀블러</li>
+                    <li>머그</li>
+                    <li>소풍커피</li>
+                    <li>스틱커피</li>
+                    <li>파우더</li>
+                    <li>기타상품</li>
+                  </ul>
+                </li>
+                <li class="nav-content-detail">
+                  <h4 class="detail-title">카드</h4>
+                  <ul class="detail-list">
+                    <li>e-Gift 카드</li>
+                    <li>실물 카드</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="main-nav-item">
+            <a href="#none" class="nav-title">STORE</a>
+            <div class="nav-content">
+              <ul class="common-inner">
+                <li class="nav-content-detail">
+                  <h4 class="detail-title">케이터링 서비스</h4>
+                </li>
+                <li class="nav-content-detail">
+                  <h4 class="detail-title">매장 찾기</h4>
+                </li>
+                <li class="nav-content-detail">
+                  <h4 class="detail-title">신규 매장</h4>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="main-nav-item">
+            <a href="#none" class="nav-title">THE COFFEE BEAN</a>
+            <div class="nav-content">
+              <ul class="common-inner">
+                <li class="nav-content-detail">
+                  <h4 class="detail-title">커피빈 코리아</h4>
+                  <ul class="detail-list">
+                    <li>Simply the Best</li>
+                    <li>커피빈 커피와 티</li>
+                  </ul>
+                </li>
+                <li class="nav-content-detail">
+                  <h4 class="detail-title">커피빈 소식</h4>
+                  <ul class="detail-list">
+                    <li>새소식</li>
+                    <li>프로모션</li>
+                    <li>공지사항</li>
+                    <li>소셜미디어</li>
+                  </ul>
+                </li>
+                <li class="nav-content-detail">
+                  <h4 class="detail-title">사회공언</h4>
+                  <ul class="detail-list">
+                    <li>국제 사회공헌</li>
+                    <li>필리핀 청소년 교육혜택 지원하기</li>
+                    <li>성경원, 나눔의 샘 후원 결연</li>
+                  </ul>
+                </li>
+                <li class="nav-content-detail">
+                  <h4 class="detail-title">채용안내</h4>
+                  <ul class="detail-list">
+                    <li>채용안내 바로가기</li>
+                    <li>채용카테고리</li>
+                  </ul>
+                </li>
+                <li class="nav-content-detail">
+                  <h4 class="detail-title">신규 입점 제의</h4>
+                </li>
+                <li class="nav-content-detail">
+                  <h4 class="detail-title">결산 공고</h4>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="main-nav-item">
+            <a href="#none" class="nav-title">CBTL</a>
+            <div class="nav-content">
+              <ul class="common-inner">
+                <li class="nav-content-detail">
+                  <h4 class="detail-title">CBTL 가이드</h4>
+                </li>
+                <li class="nav-content-detail">
+                  <h4 class="detail-title">CBTL 서비스</h4>
+                </li>
+                <li class="nav-content-detail">
+                  <h4 class="detail-title">AS 안내</h4>
+                </li>
+                <li class="nav-content-detail">
+                  <h4 class="detail-title">AS 신청</h4>
+                </li>
+                <li class="nav-content-detail">
+                  <h4 class="detail-title">CBTL FAQ</h4>
+                </li>
+                <li class="nav-content-detail">
+                  <h4 class="detail-title">제품설명서</h4>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+
+  <!-- visual -->
+  <section class="visual-area">
+    <div class="common-inner">
+      
+      <div class="title">
+        <img src="./images/visual_title.png" alt="A SLICE OF SUMMMER">
+        <a href="#none" class="btn">자세히 보기</a>
+      </div>
+
+      <img class="visual-img01" src="./images/visual-img01.png" alt="new menu">
+
+      <img class="visual-img02" src="./images/visual-img02.png" alt="new menu">
+    </div>
+  </section>
+
+  <!-- notice & promo-title -->
+  <section class="notice-promo-area">
+    <div class="bg-left"></div>
+    <div class="bg-right"></div>
+    <div class="common-inner">
+      <div class="notice-group">
+        <h3>공지사항</h3>
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <a href="#none">2023 커피빈몰 여름맞이 특가전 행사 공지</a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#none">'오로라 캐시백' 지급 완료 안내</a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#none">원두 리뉴얼 출시기념 프로모션</a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#none">블랙다이몬 바닐라빈 카푸치노 출시</a>
+            </div>
+          </div>
+        </div>
+        <div class="ico-plus"><i></i></div>
+      </div>
+
+      <div class="promo-title">
+        <h3>커피빈 프로모션</h3>
+        <div class="promo-toggle-btn"><img src="./images/ico-arrow.svg" alt="btn"></div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- promo -->
+  <section class="promo-swiper-area">
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="./images/promo_01.jpg" alt="promo-img">
+          <a href="#none" class="btn">자세히 보기</a>
+        </div>
+        <div class="swiper-slide">
+          <img src="./images/promo_02.jpg" alt="promo-img">
+          <a href="#none" class="btn">자세히 보기</a>
+        </div>
+        <div class="swiper-slide">
+          <img src="./images/promo_03.jpg" alt="promo-img">
+          <a href="#none" class="btn">자세히 보기</a>
+        </div>
+        <div class="swiper-slide">
+          <img src="./images/promo_04.jpg" alt="promo-img">
+          <a href="#none" class="btn">자세히 보기</a>
+        </div>
+        <div class="swiper-slide">
+          <img src="./images/promo_05.jpg" alt="promo-img">
+          <a href="#none" class="btn">자세히 보기</a>
+        </div>
+        <div class="swiper-slide">
+          <img src="./images/promo_06.jpg" alt="promo-img">
+          <a href="#none" class="btn">자세히 보기</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="swiper-pagination"></div>
+
+    <div class="swiper-prev">
+      <span class="material-icons">arrow_back_ios_new</span>
+    </div>
+    <div class="swiper-next">
+      <span class="material-icons">arrow_forward_ios</span>
+    </div>
+  </section>
 </body>
+
 </html>

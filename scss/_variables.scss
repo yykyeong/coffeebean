@@ -1,0 +1,26 @@
+// font
+@import url(http://www.openhiun.com/hangul/nanumbarungothic.css);
+$font-default: 'Nanum Barun Gothic', sans-serif;
+
+// color
+$black : #1d1d1d;
+$white : #fff;
+$purple : #7C51A1;
+$orange-txt : #CF661A;
+$orange-ico : #F38200;
+$brown : #5F4D3F;
+$brown-title : #2F1C11;
+$brown-txt : #4B2616;
+$promo-bg :#F6F5EF;
+$border : #ccc;
+$bg01 : #eee;
+$bg02 : #e2e2e2;
+
+// size
+$header-sub-height : 35px;
+$header-main-height : 95px;
+
+$header-height : $header-sub-height+$header-main-height;
+
+$notice-height : 62px;
+$prom-height : 690px;

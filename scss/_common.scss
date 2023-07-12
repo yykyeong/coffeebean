@@ -1,0 +1,64 @@
+// reset
+body {
+  color: $black;
+  scroll-behavior: smooth;
+}
+
+body,
+button,
+input,
+textarea {
+  font-family: $font-default;
+  font-size: 16px;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+a {
+  color: inherit;
+  cursor: pointer;
+  text-decoration: none;
+  &:hover,
+  &:focus {
+      text-decoration: none;
+  }
+}
+
+button {
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+  &:disabled {
+      cursor: not-allowed;
+  }
+}
+
+// mixin
+@mixin btn {
+  width: 130px;
+  padding: 10px;
+  border: 2px solid;
+  border-radius: 4px;
+  font-weight: 700;
+  text-align: center;
+  display: block;
+  transition: .4s;
+}
+
+// common
+.common-inner {
+  width: 1100px;
+  margin: 0 auto;
+  position: relative;
+}
