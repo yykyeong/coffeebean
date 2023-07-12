@@ -269,7 +269,7 @@ header {
   align-items: center;
 }
 
-/* promo-slick */
+/* promo-swiper */
 .promo-swiper-area {
   position: relative;
   background-color: #F6F5EF;
@@ -362,4 +362,200 @@ header {
   background-color: #F38200;
   color: #fff;
   border-color: #F38200;
+}
+
+/* members */
+.members-area {
+  background-color: #7C51A1;
+  padding: 25px 0;
+  color: #fff;
+}
+.members-area .common-inner {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+.members-area .members-cont {
+  flex: 1;
+}
+.members-area .members-cont > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.members-area .members-cont .btn {
+  width: 130px;
+  padding: 10px;
+  border: 2px solid;
+  border-radius: 4px;
+  font-weight: 700;
+  text-align: center;
+  display: block;
+  transition: 0.4s;
+  display: inline-block;
+  height: 38px;
+  line-height: 38px;
+  font-size: 14px;
+  width: auto;
+  padding: 0 18px;
+}
+.members-area .members-cont .btn:hover {
+  background-color: #A08BCC;
+  border-color: #A08BCC;
+}
+.members-area .members-cont .info-group {
+  margin-bottom: 25px;
+}
+.members-area .members-cont .info-group .info-txt h3 {
+  font-weight: normal;
+  font-size: 26px;
+  margin-bottom: 12px;
+}
+.members-area .members-cont .info-group .info-txt p {
+  font-size: 17px;
+}
+.members-area .members-cont .info-group .signin {
+  background-color: #A08BCC;
+  border-color: #A08BCC;
+}
+.members-area .members-cont .info-group .signin:hover {
+  background-color: #7C51A1;
+  border-color: #fff;
+}
+.members-area .members-cont .egift-group .egift-txt {
+  font-size: 15px;
+}
+.members-area .members-cont .egift-group .btn {
+  width: 181px;
+}
+
+/* new-prd (capsuel, pouch) */
+.new-prd {
+  height: 450px;
+  display: flex;
+}
+.new-prd .common-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.new-prd .common-inner > img {
+  width: 430px;
+}
+.new-prd .new-cont .new-badge {
+  text-transform: uppercase;
+  background-color: #785FA0;
+  width: 155px;
+  font-size: 18px;
+  line-height: 1.5;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+}
+.new-prd .new-cont .new-title {
+  color: #432E66;
+  font-size: 30px;
+  font-weight: 600;
+  margin: 15px 0 35px;
+  letter-spacing: -2px;
+}
+.new-prd .new-cont .new-desc {
+  font-size: 22px;
+  color: #4F3F32;
+  font-weight: 600;
+  line-height: 1.3;
+  letter-spacing: -0.7px;
+}
+.new-prd .new-cont .btn {
+  margin-top: 39px;
+}
+
+/* capsule */
+.capsule-area {
+  background: url(../images/capsule-bg.png) no-repeat center/cover;
+}
+.capsule-area .btn {
+  width: 130px;
+  padding: 10px;
+  border: 2px solid;
+  border-radius: 4px;
+  font-weight: 700;
+  text-align: center;
+  display: block;
+  transition: 0.4s;
+}
+.capsule-area .btn:hover {
+  color: white;
+  background-color: #785FA0;
+  border-color: #785FA0;
+}
+
+/* pouch */
+.pouch-area {
+  background-color: #F6DBD2;
+}
+.pouch-area .new-cont .new-badge {
+  background-color: #F1956C;
+}
+.pouch-area .new-cont .new-title {
+  color: #9E4027;
+}
+.pouch-area .btn {
+  width: 130px;
+  padding: 10px;
+  border: 2px solid;
+  border-radius: 4px;
+  font-weight: 700;
+  text-align: center;
+  display: block;
+  transition: 0.4s;
+}
+.pouch-area .btn:hover {
+  color: white;
+  background-color: #9E4027;
+  border-color: #9E4027;
+}
+
+/* pick */
+.pick-area {
+  background: url("../images/pick-bg-pc.png") center center fixed no-repeat;
+  background-position: bottom;
+  height: 780px;
+  background-size: auto 85%;
+  display: flex;
+  align-items: center;
+}
+.pick-area .common-inner {
+  position: relative;
+  display: flex;
+  gap: 20px;
+}
+.pick-area .common-inner .pick-txt-group {
+  width: 362px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+.pick-area .common-inner .pick-txt-group .pick-desc {
+  margin: 40px 0;
+}
+.pick-area .common-inner .pick-txt-group .btn {
+  width: 130px;
+  padding: 10px;
+  border: 2px solid;
+  border-radius: 4px;
+  font-weight: 700;
+  text-align: center;
+  display: block;
+  transition: 0.4s;
+  margin-bottom: auto;
+  color: #fff;
+}
+.pick-area .common-inner .pick-txt-group .btn:hover {
+  color: #1d1d1d;
+  background-color: #fff;
+  border-color: #fff;
+}
+.pick-area .common-inner .pick-img {
+  width: 840px;
 }
