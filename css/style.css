@@ -145,6 +145,65 @@ header {
   color: #CF661A;
 }
 
+.footer-area {
+  background-color: #e2e2e2;
+}
+.footer-area .common-inner {
+  padding: 40px 0 60px 0;
+}
+.footer-area .link-group {
+  display: flex;
+  justify-content: center;
+}
+.footer-area .link-group a {
+  color: #2F1C11;
+  font-size: 13px;
+  font-weight: 700;
+  display: block;
+  padding: 15px;
+  position: relative;
+}
+.footer-area .link-group a.orange {
+  color: #CF661A;
+}
+.footer-area .link-group a:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 3px;
+  height: 3px;
+  background-color: #ccc;
+  border-radius: 50%;
+}
+.footer-area .btn-group {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+.footer-area .btn-group .btn {
+  width: 130px;
+  padding: 10px;
+  border: 2px solid;
+  border-radius: 4px;
+  font-weight: 700;
+  text-align: center;
+  display: block;
+  transition: 0.4s;
+  font-size: 13px;
+  color: #2F1C11;
+}
+.footer-area .btn-group .btn:hover {
+  border-color: transparent;
+  color: #fff;
+}
+.footer-area .btn-group .btn:hover {
+  color: #fff;
+  background-color: #2F1C11;
+}
+
 /* visual */
 .visual-area {
   margin-top: 130px;
@@ -170,9 +229,11 @@ header {
   color: #24A6E0;
 }
 .visual-area .title .btn:hover {
-  background-color: #24A6E0;
+  border-color: transparent;
   color: #fff;
-  border-color: #24A6E0;
+}
+.visual-area .title .btn:hover {
+  background-color: #24A6E0;
 }
 .visual-area .visual-img01 {
   width: 330px;
@@ -359,9 +420,11 @@ header {
   margin: 15px auto 0;
 }
 .promo-swiper-area .btn:hover {
-  background-color: #F38200;
+  border-color: transparent;
   color: #fff;
-  border-color: #F38200;
+}
+.promo-swiper-area .btn:hover {
+  background-color: #F38200;
 }
 
 /* members */
@@ -400,8 +463,11 @@ header {
   padding: 0 18px;
 }
 .members-area .members-cont .btn:hover {
+  border-color: transparent;
+  color: #fff;
+}
+.members-area .members-cont .btn:hover {
   background-color: #A08BCC;
-  border-color: #A08BCC;
 }
 .members-area .members-cont .info-group {
   margin-bottom: 25px;
@@ -485,9 +551,11 @@ header {
   transition: 0.4s;
 }
 .capsule-area .btn:hover {
-  color: white;
+  border-color: transparent;
+  color: #fff;
+}
+.capsule-area .btn:hover {
   background-color: #785FA0;
-  border-color: #785FA0;
 }
 
 /* pouch */
@@ -511,9 +579,11 @@ header {
   transition: 0.4s;
 }
 .pouch-area .btn:hover {
-  color: white;
+  border-color: transparent;
+  color: #fff;
+}
+.pouch-area .btn:hover {
   background-color: #9E4027;
-  border-color: #9E4027;
 }
 
 /* pick */
@@ -552,9 +622,12 @@ header {
   color: #fff;
 }
 .pick-area .common-inner .pick-txt-group .btn:hover {
+  border-color: transparent;
+  color: #fff;
+}
+.pick-area .common-inner .pick-txt-group .btn:hover {
   color: #1d1d1d;
   background-color: #fff;
-  border-color: #fff;
 }
 .pick-area .common-inner .pick-img {
   width: 840px;
@@ -636,9 +709,11 @@ header {
   transform: translateX(-50%);
 }
 .catering-area .common-inner .catering-badge .back .btn:hover {
-  background-color: #1d1d1d;
-  border-color: #1d1d1d;
+  border-color: transparent;
   color: #fff;
+}
+.catering-area .common-inner .catering-badge .back .btn:hover {
+  background-color: #1d1d1d;
 }
 
 /* store */
@@ -682,7 +757,10 @@ header {
   transition: 0.4s;
 }
 .store-area .common-inner .store-txt-group .btn:hover {
-  border-color: #fff;
+  border-color: transparent;
+  color: #fff;
+}
+.store-area .common-inner .store-txt-group .btn:hover {
   background-color: white;
   color: #1d1d1d;
 }

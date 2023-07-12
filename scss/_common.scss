@@ -54,6 +54,11 @@ button {
   text-align: center;
   display: block;
   transition: .4s;
+
+  &:hover {
+    border-color: transparent;
+    color: $white;
+  }
 }
 
 // common
