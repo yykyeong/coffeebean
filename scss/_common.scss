@@ -76,9 +76,10 @@ html.fixed {
 
 // badge 
 .badge {
-  position: absolute;
+  position: fixed;
   right: 10px;
   top: calc($header-height + 10px);
+  z-index: 9;
 
   img {
   border-radius: 10px;

@@ -56,9 +56,10 @@ html.fixed {
 }
 
 .badge {
-  position: absolute;
+  position: fixed;
   right: 10px;
   top: 140px;
+  z-index: 9;
 }
 .badge img {
   border-radius: 10px;
