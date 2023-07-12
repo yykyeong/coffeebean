@@ -533,3 +533,58 @@
     }
   }
 }
+
+/* store */
+.store-area {
+  background-color: $orange-ico;
+
+
+  .common-inner {
+    height: 400px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    .store-img-group {
+      > img {
+        position: absolute;
+        border-radius: 50%;
+        box-shadow: 2px 2px 8px rgba(0,0,0,.5);
+      }
+      .store-img1 {
+        top: -60px;
+        left: 0;
+      }
+      .store-img2 {
+        top: 150px;
+        left: 250px;
+      }
+    }
+
+    .store-txt-group {
+      h3 {
+        font-size: 25px;
+      }
+      p {
+        font-size: 18px;
+        margin: 20px 0 40px;
+      }
+      .btn {
+        @include btn; 
+
+        &:hover {
+          border-color: $white;
+          background-color: white;
+          color: $black;
+        }
+      }
+    }
+  }
+
+
+  .store-texture {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+}

@@ -640,3 +640,54 @@ header {
   border-color: #1d1d1d;
   color: #fff;
 }
+
+/* store */
+.store-area {
+  background-color: #F38200;
+}
+.store-area .common-inner {
+  height: 400px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.store-area .common-inner .store-img-group > img {
+  position: absolute;
+  border-radius: 50%;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+}
+.store-area .common-inner .store-img-group .store-img1 {
+  top: -60px;
+  left: 0;
+}
+.store-area .common-inner .store-img-group .store-img2 {
+  top: 150px;
+  left: 250px;
+}
+.store-area .common-inner .store-txt-group h3 {
+  font-size: 25px;
+}
+.store-area .common-inner .store-txt-group p {
+  font-size: 18px;
+  margin: 20px 0 40px;
+}
+.store-area .common-inner .store-txt-group .btn {
+  width: 130px;
+  padding: 10px;
+  border: 2px solid;
+  border-radius: 4px;
+  font-weight: 700;
+  text-align: center;
+  display: block;
+  transition: 0.4s;
+}
+.store-area .common-inner .store-txt-group .btn:hover {
+  border-color: #fff;
+  background-color: white;
+  color: #1d1d1d;
+}
+.store-area .store-texture {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
