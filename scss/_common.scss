@@ -68,6 +68,20 @@ button {
   position: relative;
 }
 
+// badge 
+.badge {
+  position: absolute;
+  right: 10px;
+  top: calc($header-height + 10px);
+
+  img {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 4px 4px 10px rgba(0,0,0,.3);
+  cursor: pointer;
+  }
+}
+
 // go-to-top
 #to-top {
   width: 42px;

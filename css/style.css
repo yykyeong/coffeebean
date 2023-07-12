@@ -49,6 +49,18 @@ button:disabled {
   position: relative;
 }
 
+.badge {
+  position: absolute;
+  right: 10px;
+  top: 140px;
+}
+.badge img {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
 #to-top {
   width: 42px;
   height: 42px;
