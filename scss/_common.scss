@@ -44,6 +44,12 @@ button {
   }
 }
 
+html.fixed {
+  position: fixed;
+  width: 100%;
+  overflow-y: scroll;
+}
+
 // mixin
 @mixin btn {
   width: 130px;
@@ -98,3 +104,10 @@ button {
   right: 30px;
   z-index: 9;
 }
+
+
+// section,
+// footer {
+//   display: none;
+//   visibility: hidden;
+// }
