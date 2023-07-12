@@ -138,23 +138,27 @@
   position: relative;
   background-color: $promo-bg;
   transition: height .4s;
-  overflow: hidden;
-  height: 620px;
+  height: $prom-height;
 
   &.hidden {
     height: 0;
+  }
+  .common-inner {
+    height: $prom-height;
+    overflow: hidden;
   }
 
   .swiper {
     position: absolute;
     top: 35px;
     width: calc(450px * 3 + 20px);
+    
     left: 50%;
     transform: translateX(-50%);
   }
 
   .swiper-slide {
-    opacity: .5;
+    opacity: .4;
     transition: opacity .7s;
     img {
       width: 450px;

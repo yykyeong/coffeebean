@@ -274,11 +274,14 @@ header {
   position: relative;
   background-color: #F6F5EF;
   transition: height 0.4s;
-  overflow: hidden;
   height: 620px;
 }
 .promo-swiper-area.hidden {
   height: 0;
+}
+.promo-swiper-area .common-inner {
+  height: 620px;
+  overflow: hidden;
 }
 .promo-swiper-area .swiper {
   position: absolute;
@@ -288,7 +291,7 @@ header {
   transform: translateX(-50%);
 }
 .promo-swiper-area .swiper-slide {
-  opacity: 0.5;
+  opacity: 0.4;
   transition: opacity 0.7s;
 }
 .promo-swiper-area .swiper-slide img {
