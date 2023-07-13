@@ -1,47 +1,44 @@
 /* 검색 */
-const headerEl = document.querySelector('header')
-const headerMenuEls = [...headerEl.querySelectorAll('ul.sub-nav-list > li')]
-const searchBtnEl = headerEl.querySelector('.search-btn')
-const searchEl = headerEl.querySelector('.search-area')
-const searchCloseEl = searchEl.querySelector('.close-ico')
-const searchDimmedEl = searchEl.querySelector('.dimmed-layer')
-const searchInputEl = searchEl.querySelector('input')
-const searchDelayEls = [...searchEl.querySelectorAll('li')]
-const duration = .4
+const headerEl = document.querySelector('header');
+const headerMenuEls = Array.from(headerEl.querySelectorAll('ul.sub-nav-list > li'));
+const searchBtnEl = headerEl.querySelector('.search-btn');
+const searchEl = headerEl.querySelector('.search-area');
+const searchCloseEl = searchEl.querySelector('.close-ico');
+const searchDimmedEl = searchEl.querySelector('.dimmed-layer');
+const searchInputEl = searchEl.querySelector('input');
+const searchDelayEls = Array.from(searchEl.querySelectorAll('li'));
+const duration = 0.4;
 
-searchBtnEl.addEventListener('click', showSearch)
-searchCloseEl.addEventListener('click', event =>  {
-  event.stopPropagation()
-  hideSearch()
-} )
-searchDimmedEl.addEventListener('click',hideSearch)
+searchBtnEl.addEventListener('click', showSearch);
+searchCloseEl.addEventListener('click', hideSearch);
+searchDimmedEl.addEventListener('click', hideSearch);
 
 function showSearch() {
-  headerEl.classList.add('searching')
-  stopScroll()
-  headerMenuEls.reverse().forEach((el, index) => {
-    el.style.transitionDelay = `${index * duration / headerMenuEls.length}s`
-  })
-  searchDelayEls.forEach((el, index) =>  {
-    el.style.transitionDelay = `${index * duration / searchDelayEls.length}s`
-  })
+  headerEl.classList.add('searching');
+  stopScroll();
+  headerMenuEls.forEach((el, index) => {
+    el.style.transitionDelay = `${index * duration / headerMenuEls.length}s`;
+  });
+  searchDelayEls.forEach((el, index) => {
+    el.style.transitionDelay = `${index * duration / searchDelayEls.length}s`;
+  });
   setTimeout(() => {
-    searchInputEl.focus()
+    searchInputEl.focus();
   }, 600);
 }
 
 function hideSearch() {
-  headerEl.classList.remove('searching')
-  playScroll()
-  headerMenuEls.reverse().forEach((el, index) => {
-    el.style.transitionDelay = `${index * duration / headerMenuEls.length}s`
-  })
+  headerEl.classList.remove('searching');
+  playScroll();
+  headerMenuEls.forEach((el, index) => {
+    el.style.transitionDelay = `${index * duration / headerMenuEls.length}s`;
+  });
   searchDelayEls.reverse().forEach((el, index) => {
-    el.style.transitionDelay = `${index * duration / searchDelayEls.length}s`
-  })
-  searchDelayEls.reverse()
-  searchInputEl.value = ''
+    el.style.transitionDelay = `${index * duration / searchDelayEls.length}s`;
+  });
+  searchInputEl.value = '';
 }
+
 
 
 
@@ -74,6 +71,19 @@ promotionToggleBtn.addEventListener('click', () => {
   promotionArrowIco.classList.toggle('hidden');
 });
 
+
+/* Sec04 & Sec05 & Sec06 & Sec08- ScrollMagic */
+
+const scrollEls = document.querySelectorAll('section.scrollEl')
+scrollEls.forEach(function (scrollEl) {
+  new ScrollMagic
+    .Scene({ 
+      triggerElement: scrollEl, 
+      triggerHook: .8
+    })
+    .setClassToggle(scrollEl, 'show') 
+    .addTo(new ScrollMagic.Controller()) 
+})
 
 
 /* Swiper */
