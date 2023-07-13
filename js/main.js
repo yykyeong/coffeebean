@@ -55,6 +55,27 @@ function playScroll() {
 
 
 
+/* Sec01(Visual) - fade in */
+const fadeEls =document.querySelectorAll('.visual-area .fade-in')
+fadeEls.forEach((fadeEl, index) => {
+  gsap.to(fadeEl, 1, {
+    delay: (index + 1) * .5,
+    opacity: 1
+  })
+})
+
+/* Sec02(promotion) - toggle */
+const promotionEl = document.querySelector('.promo-swiper-area .common-inner');
+const promotionToggleBtn = document.querySelector('.promo-title');
+const promotionArrowIco = promotionToggleBtn.querySelector('.promo-toggle-btn');
+
+promotionToggleBtn.addEventListener('click', () => {
+  promotionEl.classList.toggle('hidden');
+  promotionArrowIco.classList.toggle('hidden');
+});
+
+
+
 /* Swiper */
 new Swiper('.notice-promo-area .swiper',{
   direction: 'vertical',

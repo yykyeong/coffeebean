@@ -35,6 +35,11 @@
     right: 0;
     top: 118px;
   }
+
+  .fade-in {
+    opacity: 0;
+  }
+  
 }
 
 /* notice */
@@ -129,6 +134,10 @@
       .promo-toggle-btn {
         display: flex;
         align-items: center;
+
+        &.hidden {
+          transform: rotate(180deg);
+        }
       }
     }
   }
@@ -138,16 +147,20 @@
 .promo-swiper-area {
   position: relative;
   background-color: $promo-bg;
-  transition: height .4s;
-  height: $prom-height;
 
-  &.hidden {
-    height: 0;
-  }
 
   .common-inner {
     height: $prom-height;
     overflow: hidden;
+    transition: height .4s;
+
+    &.hidden {
+      height: 0;
+
+      .swiper-pagination {
+        opacity: 0;
+      }
+    }
   }
 
   .swiper {
