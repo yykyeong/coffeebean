@@ -41,7 +41,6 @@ function hideSearch() {
 
 
 
-
 /* 스크롤방지 */
 function stopScroll() {
   document.documentElement.classList.add('fixed')
@@ -85,7 +84,7 @@ toTopEl.addEventListener('click', function () {
 const fadeEls =document.querySelectorAll('.visual-area .fade-in')
 fadeEls.forEach((fadeEl, index) => {
   gsap.to(fadeEl, 1, {
-    delay: (index + 1) * .5,
+    delay: (index + 1) * .3,
     opacity: 1
   })
 })
