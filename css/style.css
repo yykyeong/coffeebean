@@ -1029,15 +1029,8 @@ header.searching .autocompletes li {
   .m-hidden {
     display: block;
   }
-  header::before {
-    content: "";
-    position: fixed;
-    top: 60px;
-    left: 0;
-    width: 100%;
-    height: 0;
-    background-color: #fff;
-    transition: 0.4s;
+  header {
+    transition: 0.3s;
   }
   header .sub-nav-area {
     display: none;
@@ -1098,13 +1091,19 @@ header.searching .autocompletes li {
     transform: translate(0, 0);
   }
   header .search-area .search-group .autocompletes {
-    top: 58px;
+    top: 130px;
     padding: 26px 0 20px;
     background-color: transparent;
     transition: 0.3s;
     transform: translate(0, -100px);
     visibility: hidden;
     opacity: 0;
+  }
+  header .search-area .search-group .autocompletes li {
+    border-bottom: 1px solid #ccc;
+  }
+  header .search-area .search-group .autocompletes li:last-child {
+    border-bottom: none;
   }
   header .search-area .search-group .autocompletes a {
     padding: 16px 0 16px 16px;
@@ -1131,6 +1130,10 @@ header.searching .autocompletes li {
     visibility: visible;
     opacity: 1;
     right: 0px;
+  }
+  header.menuing.m-searching .search-area .search-group .autocompletes {
+    visibility: visible;
+    opacity: 1;
   }
   header.menuing.m-searching .clone-menu {
     transform: translate(0, 100px);

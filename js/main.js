@@ -40,7 +40,46 @@ function hideSearch() {
 }
 
 /* 메뉴 토글 _ 모바일 */
-const menuTriggerBtn = document.querySelector('.m-nav-area .menu-triger')
+const menuTriggerBtn = document.querySelector('.m-nav-area .menu-trigger')
+
+menuTriggerBtn.addEventListener('click', () => {
+  if (headerEl.classList.contains('menuing')) {
+    headerEl.classList.remove('menuing');
+    menuTriggerBtn.textContent = 'menu';
+    searchInputEl.value = '';
+
+    playScroll();
+  } else {
+    headerEl.classList.add('menuing');
+    menuTriggerBtn.textContent = 'close';
+    stopScroll();
+  }
+});
+
+/* 모바일 검색 */
+const searchTextFieldEl = document.querySelector('header .textfield')
+const searchCancelEl = document.querySelector('header .search-cancle')
+
+searchTextFieldEl.addEventListener('click', function(){
+  headerEl.classList.add('m-searching')
+  searchInputEl.focus()
+})
+searchCancelEl.addEventListener('click', function(){
+  headerEl.classList.remove('m-searching')
+})
+
+window.addEventListener('resize', function(){
+  if(window.innerWidth <= 1000) {
+    headerEl.classList.remove('searching')
+  } else {
+    headerEl.classList.remove('m-searching')
+  }
+})
+
+
+
+
+
 
 
 
