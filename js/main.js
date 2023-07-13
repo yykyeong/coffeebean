@@ -39,6 +39,9 @@ function hideSearch() {
   searchInputEl.value = '';
 }
 
+/* 메뉴 토글 _ 모바일 */
+const menuTriggerBtn = document.querySelector('.m-nav-area .menu-triger')
+
 
 
 /* 스크롤방지 */

@@ -131,6 +131,10 @@ header {
       }
 
     }
+
+    .search-cancle {
+      display: none;
+    }
     .autocompletes {
       position: absolute;
       width: 100%;
@@ -178,9 +182,6 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
-  .menu-trigger {
-    display: none;
   }
 
   .main-nav-list {
@@ -244,7 +245,7 @@ header {
 }
 
 .m-nav-area {
-  display: flex;
+  display: none;
   justify-content: space-between;
   align-items: center;
   padding: 0 10px;
@@ -274,7 +275,32 @@ header {
   }
 }
 
+.clone-menu {
+  visibility: hidden;
+  opacity: 0;
+  display: block;
+  position: absolute;
+  top: 112px;
+  left: 0;
+  width: 100%;
+  padding: 0 20px;
+  transition: .4s;
 
+  ul {
+    min-width: 590px;
+    margin: 4px auto;
+    
+    li {
+      a {
+        display: block;
+        padding: 16px 0;
+        font-size: 14px;
 
-
+        &:hover {
+          color: $orange-txt;
+        }
+      }
+    }
+  }
+}
 
