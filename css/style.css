@@ -332,6 +332,7 @@ header.searching .autocompletes li {
   width: 60px;
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 .m-nav-area .m-logo img {
   height: 50px;
@@ -341,6 +342,7 @@ header.searching .autocompletes li {
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 }
 .m-nav-area .login-btn img {
   width: 30px;
@@ -1380,7 +1382,7 @@ header.searching .autocompletes li {
 }
 .signin-area {
   margin-top: 130px;
-  padding: 100px 0 150px;
+  padding: 60px 0 50px;
   background-color: #eee;
 }
 .signin-area h1 {
@@ -1419,6 +1421,11 @@ header.searching .autocompletes li {
   border-radius: 4px;
   font-size: 14px;
 }
+.signin-area .sigin-group form input:not([type=checkbox]):focus {
+  outline: none;
+  border-color: #F38200;
+  box-shadow: 0 0 7px rgba(243, 130, 0, 0.5);
+}
 .signin-area .sigin-group form input:not([type=checkbox])[type=submit] {
   background-color: #F38200;
   border: none;
@@ -1455,7 +1462,6 @@ header.searching .autocompletes li {
 .signin-area .sigin-group form p {
   font-size: 12px;
   color: #CF661A;
-  text-align: center;
 }
 .signin-area .sigin-group .actions-group {
   display: flex;
@@ -1464,8 +1470,8 @@ header.searching .autocompletes li {
 .signin-area .sigin-group .actions-group a {
   flex: 1;
   text-align: center;
-  padding: 20px;
   font-size: 14px;
+  line-height: 55px;
   border-right: 1px solid #ccc;
 }
 .signin-area .sigin-group .actions-group a:last-child {
@@ -1473,4 +1479,15 @@ header.searching .autocompletes li {
 }
 .signin-area .sigin-group .actions-group a:hover {
   text-decoration: underline;
+}
+
+@media (max-width: 1000px) {
+  .signin-area {
+    margin-top: 60px;
+  }
+}
+@media (max-width: 740px) {
+  .signin-area {
+    padding: 10% 5% 10%;
+  }
 }

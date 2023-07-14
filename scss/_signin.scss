@@ -1,6 +1,6 @@
 .signin-area {
   margin-top: $header-height;
-  padding: 100px 0 150px;
+  padding: 60px 0 50px;
   background-color: $bg01;
   h1 {
     color: $purple;
@@ -40,6 +40,12 @@
           border: 1px solid $border;
           border-radius: 4px;
           font-size: 14px;
+
+          &:focus {
+            outline: none;
+            border-color: $orange-ico;
+            box-shadow: 0 0 7px rgba($orange-ico,.5);
+          }
       
           &[type="submit"] {
             background-color: $orange-ico;
@@ -48,6 +54,8 @@
             font-size: 20px;
             cursor: pointer;
           }
+
+          
         }
       }
 
@@ -89,7 +97,6 @@
       p {
         font-size: 12px;
         color: $orange-txt;
-        text-align: center;
       }
     }
     .actions-group {
@@ -99,8 +106,8 @@
       a {
         flex: 1;
         text-align: center;
-        padding: 20px;
         font-size: 14px;
+        line-height: 55px;
         border-right: 1px solid $border;
         &:last-child {
           border: none;
@@ -110,5 +117,22 @@
         }
       }
     }
+  }
+}
+@media (max-width : 1000px) {
+  .signin-area {
+    margin-top: $header-height-m;
+  }
+  
+}
+
+@media (max-width : 740px) {
+  .signin-area {
+    padding: 10% 5% 10%;
+
+
+
+
+
   }
 }
