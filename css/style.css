@@ -1,8 +1,11 @@
 @import url(http://www.openhiun.com/hangul/nanumbarungothic.css);
+html {
+  overflow-x: hidden;
+}
+
 body {
   color: #1d1d1d;
   scroll-behavior: smooth;
-  overflow-x: hidden;
 }
 
 body,
@@ -1209,14 +1212,14 @@ header.searching .autocompletes li {
   .pick-area {
     background: url("../images/pick-bg-m.png") center -6px no-repeat #4D4C54;
     background-size: cover;
-    height: 230vh;
+    height: 200vh;
     width: 100%;
     position: relative;
   }
   .pick-area .common-inner {
     flex-direction: column-reverse;
     height: inherit;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
   }
   .pick-area .common-inner .pick-txt-group {
@@ -1237,15 +1240,12 @@ header.searching .autocompletes li {
   }
   .pick-area .common-inner .pick-img {
     width: 700px;
-    margin-top: 240px;
   }
   /* catering */
   .catering-area {
-    background: url("../images/catering-bg-m.png") center center fixed no-repeat;
-    background-position: center;
-    background-size: cover;
+    background: url("../images/catering-bg-m.png") center center no-repeat;
+    background-position: bottom;
     height: 650px;
-    border: 3px solid;
   }
   .catering-area .common-inner .catering-badge .front {
     display: none;
@@ -1377,5 +1377,10 @@ header.searching .autocompletes li {
   }
   .footer-area .link-group a {
     padding: 7px;
+  }
+  .footer-area .btn-group {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
   }
 }

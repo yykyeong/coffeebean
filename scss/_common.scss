@@ -1,8 +1,11 @@
 // reset
+html {
+  overflow-x: hidden;
+}
+
 body {
   color: $black;
   scroll-behavior: smooth;
-  overflow-x: hidden;
 }
 
 body,
