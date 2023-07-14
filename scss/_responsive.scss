@@ -194,6 +194,7 @@
   /* promo-swiper */
   .promo-swiper-area {
 
+
     .swiper-prev {
       margin-left: -300px;
     }
@@ -377,25 +378,25 @@
 
   .promo-swiper-area {
     .common-inner {
-      height: 530px;
+      height: 430px;
     }
     .swiper {
       top: 0;
-      width: 100%;
+      width: calc(450px * 2 + 20px);
 
       .swiper-slide {
         img {
           width: 100%;
         }
       }
-      .swiper-pagination-bullets.swiper-pagination-horizontal {
-        bottom: 5px;
-      }
+    }
+    .swiper-pagination-bullets.swiper-pagination-horizontal {
+      bottom: 5px;
+    }
 
-      .swiper-prev,
-      .swiper-next {
-        display: none;
-      }
+    .swiper-prev,
+    .swiper-next {
+      display: none;
     }
   }
   

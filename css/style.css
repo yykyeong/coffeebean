@@ -1311,20 +1311,20 @@ header.searching .autocompletes li {
     display: none;
   }
   .promo-swiper-area .common-inner {
-    height: 530px;
+    height: 430px;
   }
   .promo-swiper-area .swiper {
     top: 0;
-    width: 100%;
+    width: 920px;
   }
   .promo-swiper-area .swiper .swiper-slide img {
     width: 100%;
   }
-  .promo-swiper-area .swiper .swiper-pagination-bullets.swiper-pagination-horizontal {
+  .promo-swiper-area .swiper-pagination-bullets.swiper-pagination-horizontal {
     bottom: 5px;
   }
-  .promo-swiper-area .swiper .swiper-prev,
-  .promo-swiper-area .swiper .swiper-next {
+  .promo-swiper-area .swiper-prev,
+  .promo-swiper-area .swiper-next {
     display: none;
   }
   .members-area .common-inner {
