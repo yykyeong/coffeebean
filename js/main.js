@@ -167,7 +167,7 @@ new Swiper('.promo-swiper-area .swiper', {
     delay: 5000 
   },
   loop: true, 
-  slidesPerView: 3, 
+  slidesPerView: 1, 
   spaceBetween: 10, 
   centeredSlides: true,
   pagination: {
@@ -179,8 +179,8 @@ new Swiper('.promo-swiper-area .swiper', {
     nextEl: '.promo-swiper-area .swiper-next' 
   },
   breakpoints: {
-    320: {
-      slidesPerView: 1, 
+    740: {
+      slidesPerView: 3, 
     },
   }
 });

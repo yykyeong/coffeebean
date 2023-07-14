@@ -722,6 +722,8 @@ header.searching .autocompletes li {
 }
 .members-area .members-cont .info-group {
   margin-bottom: 25px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #9379A9;
 }
 .members-area .members-cont .info-group .info-txt h3 {
   font-weight: normal;
@@ -1219,7 +1221,8 @@ header.searching .autocompletes li {
   .pick-area .common-inner .pick-txt-group {
     width: 362px;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
     gap: 30px;
     margin-bottom: 70px;
@@ -1339,12 +1342,43 @@ header.searching .autocompletes li {
     word-break: keep-all;
   }
   .new-prd .new-cont .new-desc {
-    word-break: break-all;
+    word-break: keep-all;
   }
   .new-prd .new-cont .new-desc .pc-br {
     display: none;
   }
   .new-prd .new-cont .btn {
     margin: 25px auto;
+  }
+  .pick-area {
+    height: auto;
+  }
+  .pick-area .common-inner {
+    width: 100%;
+  }
+  .pick-area .common-inner .pick-txt-group {
+    width: 100%;
+    margin-top: 170px;
+    margin-bottom: 30px;
+  }
+  .pick-area .common-inner .pick-txt-group > img {
+    width: 240px;
+  }
+  .pick-area .common-inner .pick-img {
+    width: 100%;
+    margin-top: 100px;
+  }
+  .footer-area .link-group a {
+    padding: 7px;
+  }
+  .footer-area .btn-group {
+    gap: 10px;
+    padding: 0 10px;
+    flex-shrink: 0;
+  }
+  .footer-area .btn-group .btn {
+    flex-shrink: 0;
+    width: 100px;
+    font-size: 10px;
   }
 }
