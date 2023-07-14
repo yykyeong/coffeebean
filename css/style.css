@@ -6,6 +6,7 @@ html {
 body {
   color: #1d1d1d;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body,
@@ -621,9 +622,6 @@ header.searching .autocompletes li {
 }
 .promo-swiper-area .swiper-slide-active .btn {
   display: block;
-}
-.promo-swiper-area .swiper-pagination-bullets.swiper-pagination-horizontal {
-  bottom: 30px;
 }
 .promo-swiper-area .swiper-pagination-bullet {
   background-color: transparent;

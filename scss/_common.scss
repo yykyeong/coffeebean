@@ -6,6 +6,8 @@ html {
 body {
   color: $black;
   scroll-behavior: smooth;
+  overflow-x: hidden;
+  
 }
 
 body,
