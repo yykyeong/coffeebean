@@ -1237,8 +1237,9 @@ header.searching .autocompletes li {
   /* catering */
   .catering-area {
     background: url("../images/catering-bg-m.png") center center fixed no-repeat;
-    background-position: bottom;
+    background-position: center;
     height: 650px;
+    border: 3px solid red;
   }
   .catering-area .common-inner .catering-badge .front {
     display: none;
