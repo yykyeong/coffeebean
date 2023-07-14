@@ -2,6 +2,7 @@
 body {
   color: #1d1d1d;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body,
@@ -1206,7 +1207,7 @@ header.searching .autocompletes li {
   }
   /* pick */
   .pick-area {
-    background: url("../images/pick-bg-m.png") center -6px no-repeat;
+    background: url("../images/pick-bg-m.png") center -6px no-repeat #4D4C54;
     background-size: cover;
     height: 230vh;
     width: 100%;
@@ -1242,6 +1243,7 @@ header.searching .autocompletes li {
   .catering-area {
     background: url("../images/catering-bg-m.png") center center fixed no-repeat;
     background-position: center;
+    background-size: cover;
     height: 650px;
     border: 3px solid;
   }
@@ -1253,8 +1255,9 @@ header.searching .autocompletes li {
   }
   /* store */
   .store-area .common-inner {
+    height: 480px;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
   }
@@ -1298,6 +1301,10 @@ header.searching .autocompletes li {
     flex-direction: column;
     align-items: center;
     gap: 3px;
+  }
+  /* popup */
+  .popup-badge {
+    top: 70px;
   }
   /* ****************************** */
 }
@@ -1364,6 +1371,9 @@ header.searching .autocompletes li {
   .pick-area .common-inner .pick-img {
     width: 100%;
     margin-top: 100px;
+  }
+  .store-area .common-inner .store-img-group {
+    display: none;
   }
   .footer-area .link-group a {
     padding: 7px;

@@ -1,7 +1,6 @@
 @media (max-width : 1000px) {
   .common-inner {
     max-width: 720px;
-
   }
 
   .pc-hidden {
@@ -146,6 +145,7 @@
   }
 
 
+
   /* visual */
   .visual-area {
     margin-top: $header-height-m;
@@ -235,7 +235,7 @@
 
   /* pick */
   .pick-area {
-    background: url('../images/pick-bg-m.png') center -6px no-repeat;
+    background: url('../images/pick-bg-m.png') center -6px no-repeat #4D4C54;
     background-size: cover;
     height:230vh;
     width: 100%;
@@ -276,6 +276,7 @@
   .catering-area {
     background: url('../images/catering-bg-m.png') center center fixed no-repeat;
     background-position: center;
+    background-size: cover;
     height: 650px;
     border: 3px solid;
     .common-inner {
@@ -293,11 +294,10 @@
 
   /* store */
   .store-area {
-
     .common-inner {
-
+      height: 480px;
       display: flex;
-      justify-content: space-around;
+      justify-content: center;
       align-items: center;
 
       flex-direction: column;
@@ -352,6 +352,12 @@
       gap: 3px;
     }
   }
+
+  /* popup */
+  .popup-badge {
+    top: calc($header-height-m + 10px);
+  }
+  
 
 
   /* ****************************** */
@@ -446,6 +452,15 @@
       .pick-img {
         width: 100%;
         margin-top: 100px;
+      }
+    }
+  }
+
+  .store-area {
+    .common-inner {
+
+      .store-img-group {
+        display: none;
       }
     }
   }
