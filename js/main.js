@@ -177,5 +177,10 @@ new Swiper('.promo-swiper-area .swiper', {
   navigation: { 
     prevEl: '.promo-swiper-area .swiper-prev', 
     nextEl: '.promo-swiper-area .swiper-next' 
+  },
+  breakpoints: {
+    320: {
+      slidesPerView: 1, 
+    },
   }
 });
