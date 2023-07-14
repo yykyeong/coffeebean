@@ -1378,3 +1378,99 @@ header.searching .autocompletes li {
     align-items: center;
   }
 }
+.signin-area {
+  margin-top: 130px;
+  padding: 100px 0 150px;
+  background-color: #eee;
+}
+.signin-area h1 {
+  color: #7C51A1;
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 24px;
+}
+.signin-area .sigin-group {
+  max-width: 570px;
+  margin: 0 auto;
+  border-radius: 6px;
+  background-color: #fff;
+  box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.05);
+}
+.signin-area .sigin-group h2 {
+  padding: 30px;
+  font-size: 17px;
+  line-height: 1.5;
+  text-align: center;
+  border-bottom: 1px solid #ccc;
+  font-weight: normal;
+}
+.signin-area .sigin-group h2 span {
+  color: #F38200;
+}
+.signin-area .sigin-group form {
+  padding: 30px 22px;
+}
+.signin-area .sigin-group form input:not([type=checkbox]) {
+  width: 100%;
+  margin-bottom: 12px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+.signin-area .sigin-group form input:not([type=checkbox])[type=submit] {
+  background-color: #F38200;
+  border: none;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+}
+.signin-area .sigin-group form .idremeber-cont {
+  margin-bottom: 12px;
+}
+.signin-area .sigin-group form .idremeber-cont input[type=checkbox] {
+  display: none;
+}
+.signin-area .sigin-group form .idremeber-cont input[type=checkbox] + label {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+.signin-area .sigin-group form .idremeber-cont input[type=checkbox] + label::before {
+  content: "";
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background: url("../images/mem_check_off.png") center no-repeat;
+  background-size: 25px;
+  cursor: pointer;
+}
+.signin-area .sigin-group form .idremeber-cont input[type=checkbox]:checked + label::before {
+  background: url("../images/mem_check_on.png") center no-repeat;
+  background-size: 25px;
+}
+.signin-area .sigin-group form p {
+  font-size: 12px;
+  color: #CF661A;
+  text-align: center;
+}
+.signin-area .sigin-group .actions-group {
+  display: flex;
+  border-top: 1px solid #ccc;
+}
+.signin-area .sigin-group .actions-group a {
+  flex: 1;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+  border-right: 1px solid #ccc;
+}
+.signin-area .sigin-group .actions-group a:last-child {
+  border: none;
+}
+.signin-area .sigin-group .actions-group a:hover {
+  text-decoration: underline;
+}

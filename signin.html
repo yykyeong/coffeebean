@@ -17,19 +17,6 @@
   <!-- css -->
   <link rel="stylesheet" href="./css/style.css">
 
-  <!-- GSAP & ScrollToPlugin -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js" integrity="sha512-H6cPm97FAsgIKmlBA4s774vqoN24V5gSQL4yBTDOY2su2DeXZVhQPxFK4P6GPdnZqM9fg1G3cMv5wD7e6cFLZQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollToPlugin.min.js" integrity="sha512-agNfXmEo6F+qcj3WGryaRvl9X9wLMQORbTt5ACS9YVqzKDMzhRxY+xjgO45HCLm61OwHWR1Oblp4QSw/SGh9SA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-  <!--Swiper-->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-
-  <!-- ScrollMagic -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
-  
-  <!--Lodash -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js" integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ==" crossorigin="anonymous"></script>
 
   <!--Google Material Icons-->
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
@@ -54,6 +41,8 @@
         </ul>
       </div>
     </div>
+
+    <!-- signin -->
 
     <!-- search-bar -->
     <div class="search-area">
@@ -332,218 +321,36 @@
 
   </header>
 
-
-  <!-- visual -->
-  <section class="visual-area">
-    <div class="common-inner pc-hidden">
-
-      <div class="title fade-in">
-        <img src="./images/visual_title.png" alt="A SLICE OF SUMMMER">
-        <a href="#none" class="btn">자세히 보기</a>
-      </div>
-
-      <img class="visual-img01 fade-in" src="./images/visual-img01.png" alt="new menu">
-
-      <img class="visual-img02 fade-in" src="./images/visual-img02.png" alt="new menu">
-    </div>
-    
-    <div class="m-visual m-hidden">
-      <img src="./images/visual-m.jpg" alt="visual-banner">
-    </div>
-    
-  </section>
-
-  <!-- notice & promo-title -->
-  <section class="notice-promo-area">
-    <div class="bg-left"></div>
-    <div class="bg-right"></div>
-    <div class="common-inner">
-      <div class="notice-group">
-        <h3>공지사항</h3>
-        <div class="swiper">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <a href="#none">2023 커피빈몰 여름맞이 특가전 행사 공지</a>
-            </div>
-            <div class="swiper-slide">
-              <a href="#none">'오로라 캐시백' 지급 완료 안내</a>
-            </div>
-            <div class="swiper-slide">
-              <a href="#none">원두 리뉴얼 출시기념 프로모션</a>
-            </div>
-            <div class="swiper-slide">
-              <a href="#none">블랙다이몬 바닐라빈 카푸치노 출시</a>
-            </div>
-          </div>
+  <!-- signIn -->
+  <section class='signin-area'>
+    <h1>로그인</h1>
+    <div class="sigin-group">
+      <h2>
+        대한민국에서 가장 맛있는 커피, 커피빈의 회원이 되시면<br>
+        커피빈멤버스클럽의 <span>다양한 서비스</span>와 <span>혜택</span>을 누리실 수 있습니다.
+      </h2>
+      <form>
+        <input type="text" placeholder="아이디를 입력하세요">
+        <input type="password" placeholder="비밀번호를 입력하세요">
+        <div class="idremeber-cont">
+          <input type="checkbox" id="idremember">
+          <label for="idremember">아이디 저장</label>
         </div>
-        <div class="ico-plus"><i></i></div>
-      </div>
-
-      <div class="promo-title">
-        <h3>커피빈 프로모션</h3>
-        <div class="promo-toggle-btn"><img src="./images/ico-arrow.svg" alt="btn"></div>
-      </div>
-    </div>
-
-  </section>
-
-  <!-- promo -->
-  <section class="promo-swiper-area">
-
-    <div class="common-inner">
-    <div class="swiper">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <img src="./images/promo_01.jpg" alt="promo-img">
-          <a href="#none" class="btn">자세히 보기</a>
-        </div>
-        <div class="swiper-slide">
-          <img src="./images/promo_02.jpg" alt="promo-img">
-          <a href="#none" class="btn">자세히 보기</a>
-        </div>
-        <div class="swiper-slide">
-          <img src="./images/promo_03.jpg" alt="promo-img">
-          <a href="#none" class="btn">자세히 보기</a>
-        </div>
-        <div class="swiper-slide">
-          <img src="./images/promo_04.jpg" alt="promo-img">
-          <a href="#none" class="btn">자세히 보기</a>
-        </div>
-        <div class="swiper-slide">
-          <img src="./images/promo_05.jpg" alt="promo-img">
-          <a href="#none" class="btn">자세히 보기</a>
-        </div>
-        <div class="swiper-slide">
-          <img src="./images/promo_06.jpg" alt="promo-img">
-          <a href="#none" class="btn">자세히 보기</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="swiper-pagination"></div>
-
-    <div class="swiper-prev">
-      <span class="material-icons">arrow_back_ios_new</span>
-    </div>
-    <div class="swiper-next">
-      <span class="material-icons">arrow_forward_ios</span>
-    </div>
-
-    </div>
-
-
-  </section>
-
-  <!-- members -->
-  <section class="members-area">
-    <div class="common-inner">
-      <div class="members-logo">
-        <img src="./images/logo-members.png" alt="coffeebean member's club">
-      </div>
-      <div class="members-cont">
-        <div class="info-group">
-          <div class="info-txt">
-            <h3>커피빈만의 특별한 혜택, <b>커피빈 멤버스 클럽</b></h3>
-            <p>
-              <b>커피빈 회원이세요?</b> 로그인을 통해 나만의 멤버십 확인해보세요.<br>
-              <b>커피빈 회원이 아니세요?</b> 가입을 통해 멤머스 클럽 혜택을 즐기세요.
-            </p>
-          </div>
-          <div class="btn-signin">
-            <a href="#none" class="btn signin">회원가입</a>
-            <a href="#none" class="btn">로그인</a>
-          </div>
-        </div>
-        <div class="egift-group">
-            <p class="egift-txt">
-              커피빈 e-Gift는 본인 혹은 지인에게 <b>MMS로 커피빈 카드를 선물하는 기능입니다</b><br>
-              받는 분이 커피빈 멤버스 클럽 회원이 아니더라도 마음을 전할 수 있습니다.
-            </p>
-          <div class="btn-egift">
-            <a href="#none" class="btn">e-Gift 선물하기</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- capsule -->
-  <section class="capsule-area new-prd scrollEl">
-    <div class="common-inner">
-      <div class="new-cont capsule back-to-position to-right delay-1">
-        <p class="new-badge">new</p>
-        <h2 class="new-title">네스프레소 전용 캡슐 출시</h2>
-        <p class="new-desc">
-          커피빈에서도 네스프레소 머신과 호환되는<br class="pc-br">
-          커피빈 캡슐 커피를 만나보세요!
+        <input type="submit" value="로그인">
+        <p>
+          * 비밀번호를 타 사이트와 같이 사용할 경우 도용 위험이 있으므로,<br>
+          정기적인 비밀번호 변경을 해주시기 바랍니다.
         </p>
-        <a href="#none" class="btn">자세히 보기</a>
-      </div>
-      <img src="./images/capsule-img.png" alt="capsule" class="back-to-position delay-0">
-    </div>
-  </section>
-
-  <!-- pouch -->
-  <section class="pouch-area new-prd scrollEl">
-    <div class="common-inner">
-      <img src="./images/pouch-img.png" alt="pouch" class="back-to-position delay-0">
-      <div class="new-cont capsule back-to-position to-left delay-1">
-        <p class="new-badge">new</p>
-        <h2 class="new-title">바닐라 라떼 파우치<br>잉글리쉬 브렉퍼스트 라떼 파우치</h2>
-        <p class="new-desc">
-          커피 전문 브랜드 커피빈에서 제안하는<br >
-          프리미엄 파우치 커피 & 음료
-        </p>
-        <a href="#none" class="btn">자세히 보기</a>
+      </form>
+      <div class="actions-group">
+        <a href="#none">회원가입</a>
+        <a href="#none">아이디 찾기</a>
+        <a href="#none">비밀번호 찾기</a>
       </div>
     </div>
   </section>
 
-
-  <!-- pick -->
-  <section class="pick-area scrollEl">
-    <div class="common-inner">
-      <div class="pick-txt-group">
-        <img src="./images/pick_prod_txt01.png" alt="pick-txt" class="pick-fav back-to-position to-right delay-0">
-        <img src="./images/pick_prod_txt02.png" alt="pic-txt" class="pick-desc back-to-position to-right delay-1">
-        <a href="#none" class="btn">자세히 보기</a>
-      </div>
-      <img class="pick-img" src="./images/pick-img.png" alt="pick">
-    </div>
-  </section>
-
-  <!-- catering -->
-  <section class="catering-area">
-    <div class="common-inner">
-      
-      <div class="catering-badge">
-        <div class="front">
-          <img src="./images/catering-img-front.png" alt="catering-badge">
-        </div>
-        <div class="back">
-          <img src="./images/catering-img-back.png" alt="catering-badge">
-          <a href="#none" class="btn">매장안내</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- store -->
-  <section class="store-area scrollEl">
-    <div class="common-inner">
-      <div class="store-img-group">
-        <img src="./images/find_01.jpg" alt="store" class="store-img1 back-to-position">
-        <img src="./images/find_02.jpg" alt="store" class="store-img2 back-to-position">
-      </div>
-      <div class="store-txt-group">
-        <h3 class="back-to-position to-left delay-0">커피빈을 가까이에서 경험해보세요</h3>
-        <p class="back-to-position to-left delay-1">고객님과 가장 가까이 있는 매장을 찾아보세요!</p>
-        <a href="#none" class="btn">매장 찾기</a>
-      </div>
-      <img class="store-texture" src="./images/find-img.png" alt="texture">
-    </div>
-  </section>
-
+  
   <!-- footer -->
   <footer class="footer-area">
     <div class="common-inner">
@@ -575,15 +382,6 @@
     </div>
   </footer>
 
-  <!-- badge -->
-  <div class="popup-badge">
-    <img src="./images/front-badge.jpg" alt="badge">
-  </div>
-  
-    <!-- to-top -->
-  <div id="to-top">
-    <div class="material-icons">arrow_upward</div>
-  </div>
 </body>
 
 </html>
