@@ -1,8 +1,4 @@
 @import url(http://www.openhiun.com/hangul/nanumbarungothic.css);
-html {
-  overflow-x: hidden;
-}
-
 body {
   color: #1d1d1d;
   scroll-behavior: smooth;
