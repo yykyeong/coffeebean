@@ -236,8 +236,8 @@
   /* pick */
   .pick-area {
     background: url('../images/pick-bg-m.png') center -6px no-repeat;
-    background-size: 100% auto;
-    height: 1500px;
+    background-size: cover;
+    height:230vh;
     width: 100%;
     position: relative;
 
@@ -248,15 +248,19 @@
       align-items: center;
 
       .pick-txt-group {
-        width: 362px;
+        width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        margin-top: 170px;
+        margin-bottom: 30px;
         gap: 30px;
-        margin-bottom: 70px;
         .pick-desc {
           display: none;
+        }
+        > img {
+          width: 240px;
         }
       }
 
@@ -264,6 +268,7 @@
         width: 700px;
         margin-top: 240px;
       }
+
     }
   }
 
@@ -272,7 +277,7 @@
     background: url('../images/catering-bg-m.png') center center fixed no-repeat;
     background-position: center;
     height: 650px;
-      border: 3px solid red;
+    border: 3px solid;
     .common-inner {
       .catering-badge {
         .front {
@@ -437,15 +442,7 @@
     .common-inner {
       width: 100%;
 
-      .pick-txt-group {
-        width: 100%;
-        margin-top: 170px;
-        margin-bottom: 30px;
-        > img {
-          width: 240px;
-        }
-      }
-      
+
       .pick-img {
         width: 100%;
         margin-top: 100px;
@@ -461,15 +458,5 @@
       }
     }
 
-    .btn-group {
-      gap: 10px;
-      padding: 0 10px;
-      flex-shrink: 0;
-      .btn {
-        flex-shrink: 0;
-        width: 100px;
-        font-size: 10px;
-      }
-    }
   }
 }
