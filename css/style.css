@@ -78,6 +78,7 @@ html.fixed {
   height: 42px;
   background-color: rgba(0, 0, 0, 0.5);
   color: #fff;
+  transform: translateX(100px);
   border-radius: 10px;
   cursor: pointer;
   display: flex;
